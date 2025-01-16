@@ -27,10 +27,6 @@ input.onButtonPressed(Button.B, function () {
 let Move = false
 huskylens.initI2c()
 huskylens.initMode(protocolAlgorithm.ALGORITHM_TAG_RECOGNITION)
-maqueen.motorStop(maqueen.Motors.All)
-basic.clearScreen()
-Move = false
-basic.showIcon(IconNames.StickFigure)
 // Request latest result from HUSKYLENS at start of FOREVER so that each time it repeats it has the latest result
 // 
 // If MOVE variable is set to TRUE - show the recognised ID# from the HUSKYLENS & display its number / light LED based on the result
